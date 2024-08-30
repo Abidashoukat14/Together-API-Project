@@ -38,7 +38,7 @@ Follow these steps to set up and run the project:
 
    ```bash
    git clone https://github.com/Abidashoukat/Together-Api-Project
-   cd ai-chatbot-image-generator
+   cd blob/main/main.py
 
 
 2.**Install Dependencies**
