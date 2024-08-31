@@ -1,88 +1,85 @@
-# Together-API-Project
-## Python AI Chatbot and Image Generator
+## AI Chatbot & Image Generator Using Together API
+# Project Overview
 
-## Overview
+This Python project uses the Together API to create an AI that can perform two tasks: chatting with users and generating images based on user prompts. Both functionalities are seamlessly integrated into a single main script.
 
-Welcome to the **AI Chatbot and Image Generator** project! This Python-based application leverages the Together API model to provide two key functionalities:
+# Features
+**AI Chat:** The AI can engage in conversations with users, providing dynamic and context-aware responses.<BR/>
 
-1. **Interactive Chatbot**: Engage in real-time conversations with an AI chatbot designed to respond to user queries and provide helpful interactions.
-2. **Image Generator**: Create and generate images based on user input. The images are stored in a dedicated folder for easy access and future use.
+**Image Generation:** The AI can create images based on user-provided prompts. Generated images are saved locally for future use.<BR/>
 
-This project is an exciting exploration of AI capabilities, integrating natural language processing and image generation into a cohesive application.
+# Project Structure
 
-## Features
+**main.py:** The main script where the AI chat and image generation functionalities are implemented.<BR/>
 
-### 1. Chatbot
+**Api.py:** A separate file where the API key is stored. You can create your own `Api.py` file and replace the variable with your API key.<BR/>
 
-- **Real-time Interaction**: Engage in conversations with the AI that can understand and respond to various queries.
-- **Contextual Responses**: The chatbot provides contextually relevant answers to enhance user interaction and experience.
+**Generated Images:** Images created by the AI are stored in the same directory as the main script, with filenames like `Ai_image_generate_X.jpg` where X is a number.
 
-### 2. Image Generator
+# Installation
+<BR/>
 
-- **Custom Image Creation**: Generate images based on specific input parameters. This allows for dynamic image generation tailored to user needs.
-- **Storage and Management**: Generated images are saved in a separate directory, making them easily accessible and manageable for later use.
-
-## Installation
-
-Follow these steps to set up and run the project:
-
-### Prerequisites
+ **1. Clone the repository:**
 
 
-- Python 3.x installed on your machine.
-- Access to the Together API with valid API keys.
+ `git clone https://github.com/yourusername/ai-chat-image-generator.git
+cd ai-chat-image-generator`
+<BR/>
+ **2. Install the required dependencies:**
 
-### Steps to Install
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/Abidashoukat/Together-Api-Project
-   cd blob/main/main.py
-
-
-2.**Install Dependencies**
-Install the required Python libraries using the provided `requirements.txt file`:
 
 `pip install -r requirements.txt`
+<BR/>
+ **3. Create your Api.py file:**
 
- 3. **Configure API Keys**
+Create a file named `Api.py` in the root directory.
+Inside Api.py, define your `API key` variable like this:
 
-Obtain your API keys from Together API and configure them in the `config.py` file or set them as environment variables. This step is crucial for authenticating your API requests.
+`apikey = 'your_api_key_here'`
+<BR/>
 
- 4. **Run the Application**
+**4. Run the main script:**
 
-Execute the main script to start both the chatbot and image generator functionalities:
+`python main.py`
+<BR/>
 
-  `python main.py`
+# Usage
+Upon running` main.py`, you will be prompted to choose between two options:
 
-5. **Explore Generated Images**
+**Chat with AI:** You can have a conversation with the AI by choosing option `1` or typing `"chat"`. The AI will respond to your queries based on the provided model.<BR/>
 
-Images created by the generator will be stored in the `generated_images directory`. You can view, organize, and save these images as needed.
+**Generate an Image:** By choosing option `2` or typing `"image"` or `"generate image"`, you can provide prompts to the AI, and it will generate images based on your input. Images are saved in the working directory.<BR/>
 
-6. **Project Structure**
-`main.py`: Entry point for the application that initializes and runs both the chatbot and image generator.
-`chatbot.py`: Contains the logic and functions for handling chatbot interactions.
-`image_generator.py`: Manages the image generation process, including API interactions and file storage.
-`config.py`: Configuration file for storing API keys and other settings.
-`generated_images/`: Directory where generated images are saved.
-`requirements.txt`: Lists all Python dependencies required for the project.
+To exit either mode, type "quit" or "exit".
 
-8. **Usage**
-After starting the application, you can interact with the chatbot through the terminal or any connected interface. For image generation, provide the desired parameters, and the system will create and store the image in the `generated_images` directory.
+# How It Works
 
-9. **Contributing**
-Contributions to this project are welcome! If you have suggestions, improvements, or bug fixes, please fork the repository and submit a pull request. Your input helps make this project better.
+**AI Chat**
+The `Ai_chat` method sends the user's query to the Together API's chat model and prints the response.<BR/>
+
+**Image Generation**
+The Ai_image_generate method takes a prompt and generates an image using the Together API's image generation model. The generated image is decoded from base64 and saved locally.<BR/>
+
+**Error Handling**
+The project includes basic error handling to manage exceptions during API calls or user input errors. If an error occurs, an informative message is displayed to guide the user.
+
+ # Future Enhancements
+ 
+**Add more AI models:** Integrate additional models for diverse chat and image generation capabilities.<BR/>
+
+**Enhanced Error Handling:** Improve the robustness of error handling to cover more edge cases.<BR/>
+
+**User Interface:** Develop a GUI for a more user-friendly experience.<BR/>
+
+# Contributing
+Contributions are welcome! Feel free to fork the repository and submit pull requests. For significant changes, please open an issue to discuss the proposed changes.
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-10. **Contact**
-For any questions or further information, please reach out to me  at my Gmail: abidashoukat14@gmail.com
 
 
-
-Thank you for exploring the AI Chatbot and Image Generator project! We hope you find it useful and inspiring.
-
-**Feel free to adjust the details, especially the repository URL and contact information, to fit your actual project specifics.**
 
 
 
