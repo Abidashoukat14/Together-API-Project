@@ -22,9 +22,8 @@ This Python project uses the Together API to create an AI that can perform two t
  **1. Clone the repository:**
 
 
- `git clone https://github.com/yourusername/ai-chat-image-generator.git
-cd ai-chat-image-generator`
-<BR/>
+ `git clone https://github.com/Abidashoukat/Together-API-Project/main.py`
+
  **2. Install the required dependencies:**
 
 
